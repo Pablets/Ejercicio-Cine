@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoyts Truchanga</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Righteous" rel="stylesheet" />
+    <link rel="stylesheet" href="recursos/estilos.css" />
+    <script src="index2.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hoyts Truchanga</h1>
+        <nav>
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Reservar entradas</h1>
+        <section id='reservas'>
+            <h2>Rampage</h2>
+            <div>
+                <h3>Seleccione día y hora</h3> <img src='fotos/rampage.jpg' alt='Rampage' />
+                <script>
+                    crearDia();
+                    crearHora();
+                </script> <input type='button' id='comprar' value='Comprar' />
+            </div>
+            <div>
+                <h3>Elija sus butacas</h3>
+                <table>
+                    <script>
+                        crearGrilla();
+                    </script>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
