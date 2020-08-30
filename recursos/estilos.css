@@ -2,35 +2,36 @@
 	box-sizing: border-box;
 }
 html, body{ min-height: 100vh; box-sizing: border-box;}
-body{ margin: 0; box-sizing: border-box; padding: 0 0 5em 0; font-family: 'Verdana';  background: #f2f6f8; background: -moz-linear-gradient(45deg, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); background: -webkit-linear-gradient(45deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); background: linear-gradient(45deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); }
+body{ margin: 0; box-sizing: border-box; padding: 0 0 5em 0; font-family: 'montserrat';  background: #f2f6f8; background: -moz-linear-gradient(45deg, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); background: -webkit-linear-gradient(45deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); background: linear-gradient(45deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); }
 a{ text-decoration: none; }
 header{ background: #8cbee3; display: flex; flex-wrap: wrap;  align-items: center; padding: 0.5em 1em; border-bottom: 5px solid #314875; }
-header h1{ flex: 1; font: bold 3em/1em 'Luckiest Guy', cursive; margin: .3em; color: lightyellow }
+header h1{ flex: 1; font: bold 3em/1em; margin: .3em; color: lightyellow }
 header ul{ margin: 0; padding: 0; list-style: none; display: flex;  }
 header ul a{ display: block; background: white; color: #9bb0d5; padding: 0.5em 1.2em; margin-left: 0.4em; transition: 0.24s }
 header ul a:hover{ background: #ffeed7;  }
 
-main{ width: 90%; margin: 0 auto; background: white; padding: 1em 2em; }
-main h1{ font: bold 2em/1.2em 'Trebuchet Ms'; text-transform: uppercase; background: #808080; color: white; padding: 0.4em }
+main{ width: 100%; margin: 0 auto; background: white; padding: 1em 2em; }
+main h1{ font: bold 2em/1.2em; text-transform: uppercase; background: #808080; color: white; padding: 0.4em }
+
 
 #reservas{ display: flex; flex-wrap: wrap;  }
-#reservas h2{ width: 100%; font: bold 2em/1em 'Righteous', cursive; margin: 0.2em 0; }
+#reservas h2{ width: 100%; font: bold 2em/1em, cursive; margin: 0.2em 0; }
 #reservas h3{ margin: 2em 0 0.5em 0; }
 #reservas > div:first-of-type{ width: 300px; margin-right: 1em }
 #reservas > div:first-of-type img{ width: 100%; }
 #reservas > div:first-of-type select,
 #reservas > div:first-of-type input{ display: block; margin-top: .2em; width: 100%; padding: 0.5em }
-#reservas > div:last-of-type{ flex: 1; overflow-x: scroll;}
+#reservas > div:last-of-type{ flex: 1;}
 #reservas table{ border-collapse: collapse }
 #reservas table td{ border: 1px solid #AAA; padding: 0.3em; }
 #reservas table input{ display: none; }
-#reservas table p{ margin: 0; padding: 0.6em; text-align: center; }
+#reservas table p{ margin: 0; padding: 0.4em; text-align: center; }
 #reservas table label{ font: 0.75em/1em Arial; display: block; box-sizing: content-box; padding: .4em 1em; text-align: center; background: silver; color: white; }
 #reservas table :checked + label{ background: darkgreen; color: white; }
 
 @media screen and (max-width: 500px) {
-     #reservas table {
-       display: block;
-       overflow-x: auto;
-     }
+    #reservas{ display: flex; flex-wrap: wrap;  }
+    section#reservas{ display: flex; flex-wrap: wrap; justify-content: center; }
+    #reservas table { display: block; overflow-x: auto; }
+    #reservas > div:last-of-type{ flex: 1; overflow-x: scroll;}
 }
